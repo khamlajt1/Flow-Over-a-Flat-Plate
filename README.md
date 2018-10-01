@@ -8,7 +8,7 @@ https://cfd.ninja/bias-factor/
 
 https://www.cfd-online.com/Forums/openfoam-meshing-blockmesh/61785-blockmesh-grading-calculator.html
 
-To create the grid, open the FlatePalte.geo file and change the incoming velocity to 8m/s, distance that correspond to any y+ e.g. 40. 
+To create the grid, open the FlatePalte.geo file and change the incoming velocity to 8m/s, distance that corresponds to any y+ e.g. 40. 
 
 Then type in the terminal, gmsh FlatePalte.geo and create 3D mesh and then save the file to .msh.
 
