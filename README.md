@@ -12,4 +12,4 @@ To create the grid, open the FlatePalte.geo file and change the incoming velocit
 
 Then type in the terminal, gmsh FlatePalte.geo and create 3D mesh and then save the file to .msh.
 
-Go to the directory where you save the case file and Type gmshToFoam FlatePlate.msh in the termianl. Then ./Allprepare in the termianl to adjust the boundary condtions. Finally, on the same terminal type mpirun -np 24 simpleFoam -parallel > log.simpleFoam.Note the number 24 corresponds to the number of cores I have!
+Go to the directory where you save the case file and Type gmshToFoam FlatePlate.msh in the terminal. Then ./Allprepare in the terminal to adjust the boundary conditions. Finally, on the same terminal type mpirun -np 24 simpleFoam -parallel > log.simpleFoam. Note the number 24 corresponds to the number of cores I have! You can also plot the residual on the fly by opening a new terminal and typing gnuplot Residual.
