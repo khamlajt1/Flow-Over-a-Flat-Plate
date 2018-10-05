@@ -8,8 +8,6 @@ https://cfd.ninja/bias-factor/
 
 https://www.cfd-online.com/Forums/openfoam-meshing-blockmesh/61785-blockmesh-grading-calculator.html
 
-To create the grid, open the FlatePalte.geo file and change the incoming velocity to 8m/s, distance that corresponds to any y+ e.g. 40. 
+To create the grid, open the FlatePalte.geo file and change the incoming velocity to 69.26m/s, distance that corresponds to any y+ e.g. 40. Then type in the terminal, gmsh FlatePalte.geo and create 3D mesh and then save the file to .msh.
 
-Then type in the terminal, gmsh FlatePalte.geo and create 3D mesh and then save the file to .msh.
-
-Go to the directory where you save the case file and Type gmshToFoam FlatePlate.msh in the terminal. Then ./Allprepare in the terminal to adjust the boundary conditions. Finally, on the same terminal type mpirun -np 24 simpleFoam -parallel > log.simpleFoam. Note the number 24 corresponds to the number of cores I have! You can also plot the residual on the fly by opening a new terminal and typing gnuplot Residual.
+Go to the directory where you saved the case file and Type gmshToFoam FlatePlate.msh in the terminal. Then ./Allprepare in the terminal to adjust the boundary conditions. Finally, on the same terminal type mpirun -np 24 simpleFoam -parallel > log.simpleFoam. Note the number 24 corresponds to the number of cores I have! You can also plot the residual on the fly by opening a new terminal and typing gnuplot Residual in the directory where you saved youe case file.
