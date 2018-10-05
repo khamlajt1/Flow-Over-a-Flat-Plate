@@ -1,0 +1,13 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # run from this directory
+
+# Clean time directories only
+
+rm -rf *[1-9]*
+rm -r log.simpleFoam
+rm -r processor*
+rm -r logs
+rm -r 0/wallShearStress
+rm -r 0/y
+rm -r 0/yPlus
+# ----------------------------------------------------------------- end-of-file
